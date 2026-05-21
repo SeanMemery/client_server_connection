@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "public-connection"
+version = "0.1.0"
+description = "Reusable Pattern Learning client/server public connection code"
+requires-python = ">=3.10"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = [
+  "public_connection",
+  "public_connection_client_agent",
+  "public_connection_direct_app",
+  "public_connection_models",
+  "public_connection_public_access",
+  "public_connection_public_proxy",
+]
